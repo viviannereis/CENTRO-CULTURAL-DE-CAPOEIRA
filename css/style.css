@@ -16,3 +16,8 @@ html {
 body {
     font-family: 'Kumbh Sans', 'Abel', sans-serif; 
 }
+
+nav {
+    background: rgba(0,0,0,0.5);
+    align-items: center;
+}
