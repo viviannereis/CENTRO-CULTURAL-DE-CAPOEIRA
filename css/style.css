@@ -1,6 +1,7 @@
-@import "color.css";
+@import "colors.css";
 @import "header.css";
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "footer.css";
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 * { 
     margin: 0;
@@ -14,10 +15,39 @@ html {
 }
 
 body {
-    font-family: 'Kumbh Sans', 'Abel', sans-serif; 
+    font-family: 'Abel', sans-serif; 
 }
 
 nav {
-    background: rgba(0,0,0,0.5);
+    background: white;
     align-items: center;
+}
+
+.bg-red {
+    background: var(--red);
+    border-radius: 3rem;
+}
+
+/***** Nossos diferenciais ****/
+.box-diferenciais {
+    background: var(--gray);
+    -webkit-box-shadow: -1px -50px 0px -16px var(--red-light), 2px 50px 0px -16px var(--red-light); 
+    box-shadow: -1px -50px 0px -16px var(--red-light), 2px 50px 0px -16px var(--red-light);
+    top: -2rem;
+}
+
+/***** *****/
+.card-number {
+    -webkit-box-shadow: -20px -20px 0px 0px rgba(245,209,209,1);
+    box-shadow: -20px -20px 0px 0px rgba(245,209,209,1);
+    background: var(--red);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+/***** Footer ******/
+.footer {
+    background: var(--red-light);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
