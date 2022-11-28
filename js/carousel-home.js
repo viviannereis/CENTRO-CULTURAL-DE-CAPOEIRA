@@ -1,17 +1,17 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 1,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    autoplay: true, // fica rodando sozinho
-    autoplayTimeout: 2000,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".carousel-button-next",
-      prevEl: ".carousel-button-prev",
-    },
+$(document).ready(function() {
+  var owl = $("#slider-carousel");
+  owl.owlCarousel({
+    items: 4,
+    itemsDesktop: [1000, 4],
+    itemsDesktopSmall: [900, 2],
+    itemsTablet: [600, 1],
+    itemsMobile: false,
+    pagination: false
   });
+  $(".next").click(function() {
+    owl.trigger('owl.next');
+  })
+  $(".prev").click(function() {
+    owl.trigger('owl.prev');
+  })
+});
