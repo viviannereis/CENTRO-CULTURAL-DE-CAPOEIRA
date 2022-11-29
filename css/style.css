@@ -23,9 +23,26 @@ nav {
     align-items: center;
 }
 
+nav a {
+    transition: all .3s ease;
+}
+
+nav a:hover {
+    transform:  scaleX(1);
+    border-bottom: 5px solid var(--red);
+}
+
+.letter-spacing-10 {
+    letter-spacing: 10px;
+}
+
 .bg-red {
     background: var(--red);
     border-radius: 3rem;
+}
+
+.color-red {
+    color: var(--red);
 }
 
 /***** Nossos diferenciais ****/
@@ -43,6 +60,9 @@ nav {
     background: var(--red);
     border-radius: 2rem;
     padding: 2rem;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 1px;
 }
 
 /***** Footer ******/
