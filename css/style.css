@@ -65,6 +65,17 @@ nav a:hover {
     letter-spacing: 1px;
 }
 
+/**** Pagina Sobre ****/
+.box-header {
+    box-shadow: -1px -43px 0px -20px rgba(0,0,0,1);
+    -webkit-box-shadow: -1px -43px 0px -20px rgba(0,0,0,1);
+    -moz-box-shadow: -1px -43px 0px -20px rgba(0,0,0,1);
+    background: var(--red);
+    padding: 2rem;
+    margin-top: 10rem;
+    border-radius: 1rem;
+}
+
 /***** Footer ******/
 .footer {
     background: var(--red-light);
