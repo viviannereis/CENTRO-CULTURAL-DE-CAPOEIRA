@@ -1,7 +1,7 @@
 @import "colors.css";
 @import "header.css";
 @import "footer.css";
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700&display=swap');
 
 * { 
     margin: 0;
@@ -15,7 +15,8 @@ html {
 }
 
 body {
-    font-family: 'Abel', sans-serif; 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 300;
 }
 
 nav {
@@ -67,13 +68,26 @@ nav a:hover {
 
 /**** Pagina Sobre ****/
 .box-header {
-    box-shadow: -1px -43px 0px -20px rgba(0,0,0,1);
-    -webkit-box-shadow: -1px -43px 0px -20px rgba(0,0,0,1);
-    -moz-box-shadow: -1px -43px 0px -20px rgba(0,0,0,1);
     background: var(--red);
-    padding: 2rem;
-    margin-top: 10rem;
     border-radius: 1rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.shadow-red {
+    background: var(--red-light);
+    margin-top: 8rem;
+    border-radius: 0.8rem;
+}
+
+/**** Pagina Nosso Time ***/
+.img-mestres {
+    border-radius: 4rem;
 }
 
 /***** Footer ******/
@@ -81,4 +95,11 @@ nav a:hover {
     background: var(--red-light);
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
+}
+
+.footer h4 {
+    color: var(--red);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
