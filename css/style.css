@@ -12,6 +12,7 @@
 html {
     scroll-behavior: smooth;
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -20,86 +21,36 @@ body {
 }
 
 nav {
-    background: white;
-    align-items: center;
+    height: 70px;
 }
 
-nav a {
+nav li {
     transition: all .3s ease;
 }
 
-nav a:hover {
+nav li:hover {
     transform:  scaleX(1);
     border-bottom: 5px solid var(--red);
 }
 
-.letter-spacing-10 {
-    letter-spacing: 10px;
-}
-
-.bg-red {
+.section-info {
     background: var(--red);
-    border-radius: 3rem;
-}
-
-.color-red {
-    color: var(--red);
-}
-
-/***** Nossos diferenciais ****/
-.box-diferenciais {
-    background: var(--gray);
-    -webkit-box-shadow: -1px -50px 0px -16px var(--red-light), 2px 50px 0px -16px var(--red-light); 
-    box-shadow: -1px -50px 0px -16px var(--red-light), 2px 50px 0px -16px var(--red-light);
-    top: -2rem;
+    color: white;
+    margin: 4rem 0;
+    padding: 2rem 0;
+    border-radius: 2rem;
 }
 
 /***** *****/
 .card-number {
-    -webkit-box-shadow: -20px -20px 0px 0px rgba(245,209,209,1);
-    box-shadow: -20px -20px 0px 0px rgba(245,209,209,1);
     background: var(--red);
+    color: white;
     border-radius: 2rem;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     align-items: center;
-    letter-spacing: 1px;
 }
 
-/**** Pagina Sobre ****/
-.box-header {
-    background: var(--red);
-    border-radius: 1rem;
-    text-transform: uppercase;
-    color: white;
-    font-weight: bold;
-    letter-spacing: 4px;
-    font-size: 22px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-
-.shadow-red {
-    background: var(--red-light);
-    margin-top: 8rem;
-    border-radius: 0.8rem;
-}
-
-/**** Pagina Nosso Time ***/
-.img-mestres {
-    border-radius: 4rem;
-}
-
-/***** Footer ******/
-.footer {
-    background: var(--red-light);
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-}
-
-.footer h4 {
-    color: var(--red);
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-weight: 600;
+.card-number h3 {
+    color: white !important;
 }
