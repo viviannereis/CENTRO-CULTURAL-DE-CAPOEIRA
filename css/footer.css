@@ -1,3 +1,10 @@
 .footer-1 {
     background: var(--red-light);
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+.uk-icon-button {
+    background: var(--red) !important;
+    color: white !important;
 }

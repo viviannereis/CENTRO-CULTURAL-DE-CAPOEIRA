@@ -38,6 +38,13 @@ nav li:hover {
     border-bottom: 5px solid var(--red);
 }
 
+
+.uk-navbar-nav>li>a {
+    color: #999;
+    font-family: 'Prosto One', cursive !important;
+    letter-spacing: 1px;
+}
+
 .section-info {
     background: var(--red);
     color: white;
