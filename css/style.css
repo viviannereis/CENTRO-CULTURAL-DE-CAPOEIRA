@@ -41,16 +41,27 @@ nav li:hover {
 .section-info {
     background: var(--red);
     color: white;
-    margin: 4rem 0;
-    padding: 2rem 0;
+    margin: 4rem 0 0;
+    padding: 2rem 2rem 6rem;
     border-radius: 2rem;
 }
 
 /***** *****/
+.box-diferenciais {
+    box-shadow: 0px -34px 0px -14px var(--red-light),
+    0px 39px 0px -21px var(--red-light),
+    1px 0px 205px 11px rgba(0,0,0,0.22);;
+    background: var(--gray);
+    padding: 2rem;
+    position: relative;
+    top: -2rem;
+}
+
 .card-number {
     background: var(--red);
+    box-shadow: 0px -34px 0px -14px var(--red-light), 0px 15px 28px 0px rgba(0,0,0,0.22);
     color: white;
-    border-radius: 1rem;
+    border-radius: 5px;
     padding: 1rem;
     text-align: center;
     align-items: center;
