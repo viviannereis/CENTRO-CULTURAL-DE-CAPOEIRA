@@ -5,308 +5,381 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--/ Tailwind /-->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!--/ Icones Font Awesome /-->
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="/css/style.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.16/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.16/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.16/dist/js/uikit-icons.min.js"></script>
+    
     <title>Sobre</title>
 </head>
 
 <body>
     <!--////////// Nav ///////////-->
-    <nav class="fixed w-full z-30 top-0 shadow-md">
-        <div class="flex justify-between h-14 m-2">
-            <!--/ Logo /-->
-            <div>
-                <a aria-label="Home" href="/#">
-                    <img class="w-36" src="/img/logo/logo.png" alt="Logo">
-                </a>
-            </div>
-            <!--/Links do Menu /-->
-            <div class="md:flex md:gap-x-6 items-center">
-                <a class="text-xl" href="/pages/sobre/sobre-ventre-livre.html">Sobre</a>
-                <a class="text-xl" href="/pages/nosso-time.html">Nosso Time</a>
-                <a class="text-xl" href="/#portifolio">Multimídia</a>
-                <a class="text-xl" href="/#portifolio">Blog</a>
-                <a class="text-xl" href="/#contato">Contato</a>
-            </div>
-        </div>
-    </nav>
-
-    <header class="bg-fixed flex justify-center">
-        <div class="w-5/6">
-            <div class="relative top-10 p-8 mx-9 shadow-red"></div>
-            <div class="box-header relative p-8">
-                <h1><i class="fas fa-university"></i> Sobre o Ventre Livre</h1>
-            </div>
-        </div>
-    </header>
-    
-    <section class="h-full">
-        <!--/1/-->
-        <div class="flex items-center mx-20">
-            <div class="w-1/2">
-                <img src="/img/sobre/img-1.png" alt="Grupo de capoeira">
-            </div>
-            <!---->
-            <div class="w-1/2">
-                <h3 class="text-4xl color-red">Qual o significado da logo do Grupo?</h3>
-                <p class="text-lg">
-                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
-                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
-                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
-                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
-                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
-                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
-                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
-                </p>
-                <p class="text-2xl color-red">Por: Mestre Batata</p>
-            </div>
-        </div>
-        <!--/2/-->
-        <div class="flex items-center mx-20">
-            <div class="w-1/2">
-                <h3 class="text-4xl color-red">Como funciona a hierarquia?</h3>
-                <p class="text-lg">
-                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
-                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
-                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
-                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
-                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
-                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
-                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
-                </p>
-                <p class="text-2xl color-red">Por: Mestre Batata</p>
-            </div>
-            <!---->
-            <div class="w-1/2">
-                <img src="/img/sobre/img-2.png" alt="Grupo de capoeira">
-            </div>
-        </div>
-        <!--/3/-->
-        <div class="flex items-center mx-20">
-            <div class="w-1/2">
-                <img src="/img/sobre/img-3.png" alt="Grupo de capoeira">
-            </div>
-            <!---->
-            <div class="w-1/2">
-                <h3 class="text-4xl color-red">Porque usamos cordel e não corda?</h3>
-                <p class="text-lg">
-                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
-                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
-                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
-                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
-                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
-                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
-                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
-                </p>
-                <p class="text-2xl color-red">Por: Mestre Batata</p>
-            </div>
-        </div>
-        <!--/4/-->
-        <div class="flex items-center mx-20">
-            <div class="w-1/2">
-                <h3 class="text-4xl color-red">O Legado</h3>
-                <p class="text-lg">
-                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
-                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
-                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
-                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
-                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
-                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
-                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
-                </p>
-                <p class="text-2xl color-red">Por: Mestre Batata</p>
-            </div>
-            <!---->
-            <div class="w-1/2">
-                <img src="/img/sobre/img-4.png" alt="Grupo de capoeira">
-            </div>
-        </div>
-        <!--/5/-->
-        <div class="flex items-center mx-20">
-            <div class="w-1/2">
-                <img src="/img/sobre/img-5.png" alt="Grupo de capoeira">
-            </div>
-            <!---->
-            <div class="w-1/2">
-                <h3 class="text-4xl color-red">Nosso Propósito</h3>
-                <p class="text-lg">
-                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
-                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
-                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
-                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
-                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
-                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
-                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
-                </p>
-                <p class="text-2xl color-red">Por: Mestre Batata</p>
-            </div>
-        </div>
-        <!--/6/-->
-        <div class="flex items-center mx-20">
-            <div class="w-1/2">
-                <h3 class="text-4xl color-red">Resultados Alcançados</h3>
-                <p>
-                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
-                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
-                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
-                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
-                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
-                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
-                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
-                </p>
-                <p class="text-2xl color-red">Por: Mestre Batata</p>
-            </div>
-            <!---->
-            <div class="w-1/2">
-                <img src="/img/sobre/img-6.png" alt="Grupo de capoeira">
-            </div>
-        </div>
-        <!--/7/-->
-        <div class="flex items-center mx-20">
-            <div class="w-1/2">
-                <img src="/img/sobre/img-7.png" alt="Grupo de capoeira">
-            </div>
-            <!---->
-            <div class="w-1/2">
-                <h3 class="text-4xl color-red">Manifesto Cultural</h3>
-                <p class="text-lg">
-                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
-                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
-                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
-                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
-                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
-                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
-                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
-                </p>
-                <p class="text-2xl color-red">Por: Mestre Batata</p>
-            </div>
-        </div>
-        <!--/8/-->
-        <div class="flex items-center mx-20">
-            <div class="w-1/2">
-                <h3 class="text-4xl color-red">Impacto Social</h3>
-                <p class="text-lg">
-                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
-                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
-                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
-                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
-                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
-                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
-                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
-                </p>
-                <p class="text-lg color-red">Por: Mestre Batata</p>
-            </div>
-            <!---->
-            <div class="w-1/2">
-                <img src="/img/sobre/img-8.png" alt="Grupo de capoeira">
-            </div>
-        </div>
-        <!--/9/-->
-        <div class="flex items-center mx-20">
-            <div class="w-1/2">
-                <img src="/img/sobre/img-9.png" alt="Grupo de capoeira">
-            </div>
-            <!---->
-            <div class="w-1/2">
-                <h3 class="text-4xl color-red">Saúde Física e Mental</h3>
-                <p class="text-lg">
-                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
-                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
-                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
-                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
-                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
-                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
-                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
-                </p>
-                <p class="text-2xl color-red">Por: Mestre Batata</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="flex justify-center text-justify">
-        <div class="w-1/2">
-            <h2 class="text-3xl color-red uppercase text-center font-bold">Hino do Grupo Ventre Livre</h2>
-            <p>
-                Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, 
-                quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas cinco séculos, 
-                mas também o salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset 
-                contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
-            </p>
-            <p>
-                Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, 
-                quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas cinco séculos, 
-                mas também o salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset 
-                contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
-            </p>
-            <p>
-                Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, 
-                quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas cinco séculos, 
-                mas também o salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset 
-                contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
-            </p>
-            <p>
-                Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, 
-                quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas cinco séculos, 
-                mas também o salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset 
-                contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
-            </p>
-            <div class="color-red text-xl font-bold">
-                <h4>Autora: </h4>
-                <h4><span class="uppercase">Graduada Caixo</span> - Elisângela Fonseca</h4>
-                <p>Data de criação: 00/00/0000</p>
-            </div>
-        </div>
-    </section>
-
-
-     <!--///////// Footer //////////-->
-     <footer>
-        <section class="flex justify-center gap-20 items-center footer">
-            <div>
-                <img class="w-48 rounded-full" src="/img/logo/logo.png" alt="Logo footer">
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+            <div class="uk-navbar-left">
+                <a href="/index.html"><img class="uk-width-1-3@m" src="/img/logo/logo.png"></a>
             </div>
             <!--//-->
-            <div>
-                <h4>Sede</h4>
-                <p>Rua Exemplo, 00 - 000</p>
-                <p>Centro - Rio de Janeiro/RJ - Brasil</p>
-                <p>CEP: 20000-000</p>
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav uk-navbar-right">
+                    <li>
+                        <a href="#">Sobre <span uk-navbar-parent-icon></span></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="/pages/sobre/sobre-ventre-livre.html">Sobre o Ventre Livre</a></li>
+                                <li><a href="#">Sobre Nossos Eventos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="/pages/nosso-time.html">Nosso Time</a></li>
+                    <li><a href="/pages/multimidia.html">Multimídia</a></li>
+                    <li><a href="/pages/blog/page-1.html">Blog</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
             </div>
-            <!--//-->
-            <div>
-                <h4>Entre em contato</h4>
-                <p>(+55) 21 99999-9999</p>
-                <p>contato@capoeiraventrelivre.com.br</p>
-            </div>
-            <!--//-->
-            <div>
-                <h4>Estamos online</h4>
-                <div class="flex gap-8 text-xl color-red border-b-4 border-red-600">
-                    <a><i class="fab fa-instagram"></i></a>
-                    <a><i class="fab fa-linkedin-in"></i></a>
-                    <a><i class="fab fa-facebook"></i></a>
-                    <a><i class="fab fa-whatsapp"></i></a>
-                    <a><i class="fab fa-youtube"></i></a>
+            <!--/ Search/-->
+            <div class="uk-navbar-right">
+                <div>
+                    <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                    <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+                        <form class="uk-search uk-search-navbar uk-width-1-1">
+                            <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search" autofocus>
+                        </form>
+                    </div>
                 </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--////////// Header ///////////-->
+    <header class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: scale; autoplay: true; min-height: 300; max-height: 600">
+       
+    </header>
+
+    <article class="uk-container">
+        <section class="uk-child-width-1-2@m uk-flex-middle uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+            <div class="uk-card">
+                <img src="/img/sobre/img-1.png">
+            </div>
+            <!---->
+            <div class="uk-card">
+                <h4>O Princípio de Tudo</h4>
+                <p class="uk-text-justify">
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
+                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
+                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
+                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
+                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
+                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+                <h6>Por: Mestre Batata</h6>
             </div>
         </section>
         <!--//-->
-        <section class="flex justify-between mx-9 text-lg">
-            <div class="flex gap-9">
-                <a href="/#">Home</a>
-                <a href="/#skills">Skills</a>
-                <a href="/#portifolio">Portifolio</a>
-                <a href="/#contato">Contato</a>
+        <section class="uk-child-width-1-2@m uk-flex-middle uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 500; repeat: true">
+            <div class="uk-card">
+                <h4>Nasce o Centro Cultural de Capoeira Ventre Livre</h4>
+                <p class="uk-text-justify">
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
+                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
+                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
+                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
+                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
+                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+                <h6>Por: Mestre Batata</h6>
             </div>
             <!---->
-            <div>
-                <p>Copyright 2022 - Capoeira Ventre Livre</p>
+            <div class="uk-card">
+                <img src="/img/sobre/img-2.png">
             </div>
         </section>
+        <!--//-->
+        <section class="uk-child-width-1-2@m uk-flex-middle uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+            <div class="uk-card">
+                <img src="/img/sobre/img-3.png">
+            </div>
+            <!---->
+            <div class="uk-card">
+                <h4>Qual o significado da logo do Grupo?</h4>
+                <p class="uk-text-justify">
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
+                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
+                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
+                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
+                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
+                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+                <h6>Por: Mestre Batata</h6>
+            </div>
+        </section>
+        <!--//-->
+        <section class="uk-child-width-1-2@m uk-flex-middle uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 500; repeat: true">
+            <div class="uk-card">
+                <h4>Como funciona a hierarquia?</h4>
+                <p class="uk-text-justify">
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
+                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
+                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
+                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
+                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
+                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+                <h6>Por: Mestre Batata</h6>
+            </div>
+            <!---->
+            <div class="uk-card">
+                <img src="/img/sobre/img-4.png">
+            </div>
+        </section>
+        <!--//-->
+        <section class="uk-child-width-1-2@m uk-flex-middle uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+            <div class="uk-card">
+                <img src="/img/sobre/img-5.png">
+            </div>
+            <!---->
+            <div class="uk-card">
+                <h4>Porque usamos cordel e não corda?</h4>
+                <p class="uk-text-justify">
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
+                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
+                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
+                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
+                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
+                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+                <h6>Por: Mestre Batata</h6>
+            </div>
+        </section>
+        <!--//-->
+        <section class="uk-child-width-1-2@m uk-flex-middle uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 500; repeat: true">
+            <div class="uk-card">
+                <h4>O Legado</h4>
+                <p class="uk-text-justify">
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
+                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
+                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
+                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
+                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
+                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+                <h6>Por: Mestre Batata</h6>
+            </div>
+            <!---->
+            <div class="uk-card">
+                <img src="/img/sobre/img-6.png">
+            </div>
+        </section>
+        <!--//-->
+        <section class="uk-child-width-1-2@m uk-flex-middle uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+            <div class="uk-card">
+                <img src="/img/sobre/img-7.png">
+            </div>
+            <!---->
+            <div class="uk-card">
+                <h4>Nosso Propósito</h4>
+                <p class="uk-text-justify">
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
+                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
+                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
+                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
+                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
+                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+                <h6>Por: Mestre Batata</h6>
+            </div>
+        </section>
+        <!--//-->
+        <section class="uk-child-width-1-2@m uk-flex-middle uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 500; repeat: true">
+            <div class="uk-card">
+                <h4>Resultados Alcançados</h4>
+                <p class="uk-text-justify">
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
+                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
+                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
+                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
+                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
+                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+                <h6>Por: Mestre Batata</h6>
+            </div>
+            <!---->
+            <div class="uk-card">
+                <img src="/img/sobre/img-8.png">
+            </div>
+        </section>
+        <!--//-->
+        <section class="uk-child-width-1-2@m uk-flex-middle uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+            <div class="uk-card">
+                <img src="/img/sobre/img-9.png">
+            </div>
+            <!---->
+            <div class="uk-card">
+                <h4>Manifesto Cultural</h4>
+                <p class="uk-text-justify">
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
+                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
+                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
+                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
+                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
+                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+                <h6>Por: Mestre Batata</h6>
+            </div>
+        </section>
+        <!--//-->
+        <section class="uk-child-width-1-2@m uk-flex-middle uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 500; repeat: true">
+            <div class="uk-card">
+                <h4>Impacto Social</h4>
+                <p class="uk-text-justify">
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
+                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
+                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
+                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
+                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
+                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+                <h6>Por: Mestre Batata</h6>
+            </div>
+            <!---->
+            <div class="uk-card">
+                <img src="/img/sobre/img-10.png">
+            </div>
+        </section>
+        <!--//-->
+        <section class="uk-child-width-1-2@m uk-flex-middle uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+            <div class="uk-card">
+                <img src="/img/sobre/img-11.png">
+            </div>
+            <!---->
+            <div class="uk-card">
+                <h4>Saúde Física e Mental</h4>
+                <p class="uk-text-justify">
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um 
+                    impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. 
+                    Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, 
+                    permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento 
+                    de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de 
+                    editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+                <h6>Por: Mestre Batata</h6>
+            </div>
+        </section>
+        <!--//-->
+        <section class="uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+            <div class="uk-card">
+                <h4>Hino do grupo ventre livre</h4>
+                <p>
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando 
+                    um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de 
+                    espécimes de tipos. Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição 
+                    eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 
+                    com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, 
+                    com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+                <p>
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando 
+                    um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de 
+                    espécimes de tipos. Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição 
+                    eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 
+                    com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, 
+                    com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+                <p>
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando 
+                    um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de 
+                    espécimes de tipos. Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição 
+                    eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 
+                    com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, 
+                    com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+                <p>
+                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando 
+                    um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de 
+                    espécimes de tipos. Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição 
+                    eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 
+                    com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, 
+                    com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+                </p>
+                <h5>
+                    Autora: <br/>
+                    <span class="uk-text-uppercase">Graduada caxo</span> - Elisângela Fonseca<br/>
+                    Data de criação: 00/00/0000
+                </h5>
+            </div>
+        </section>
+        <!--//-->
+        <section class="uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+            <p>Para ouvir o nosso hino e outras músicas acesse a nossa página de multimídia</p>
+            <a href="">Multimídia ventre livre</a>
+        </section>
+    </article>
+    
+
+     <!--///////// Footer //////////-->
+     <footer>
+       <section class="footer-1">
+            <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-padding" uk-grid>
+                <div>
+                    <img class="uk-width-1-2" src="/img/logo/logo.png">
+                </div>
+                <div>
+                    <h6>Sede</h6>
+                    <p>
+                        Rua Exemplo, 00 - 000 <br/> 
+                        Centro - Rio de Janeiro/RJ - Brasil<br/>
+                        CEP: 20000-000
+                    </p>
+                    
+                </div>
+                <div>
+                    <h6>Entre em contato</h6>
+                    <p>(+55) 21 99999-9999<br/>
+                        contato@capoeiraventrelivre.com.br
+                    </p>
+                </div>
+                <div>
+                    <h6>Estamos oniline</h6>
+                    <a href="" class="uk-icon-button" uk-icon="icon: instagram"></a>
+                    <a href="" class="uk-icon-button" uk-icon="icon: linkedin"></a>
+                    <a href="" class="uk-icon-button" uk-icon="icon: facebook"></a>
+                    <a href="" class="uk-icon-button" uk-icon="icon: whatsapp"></a>
+                    <a href="" class="uk-icon-button" uk-icon="icon: youtube"></a>
+                </div>
+            </div>
+       </section>
+       <!--//-->
+       <section class="uk-flex-middle uk-flex-between@l uk-padding-small" uk-grid>
+            <div >
+                <a class="uk-link-muted uk-margin-medium-right" href="#">Sobre o Ventre Livre</a>
+                <a class="uk-link-muted uk-margin-medium-right" href="#">Nosso Time</a>
+                <a class="uk-link-muted uk-margin-medium-right" href="#">Multimídia</a>
+                <a class="uk-link-muted uk-margin-medium-right" href="#">Blog</a>
+                <a class="uk-link-muted" href="#">Contato</a>
+            </div>
+            <!--//-->
+            <div >
+                <p >Copyright 2022 - Capoeira Ventre Livre</p>
+            </div>
+       </section>
      </footer>
     
 </body>
