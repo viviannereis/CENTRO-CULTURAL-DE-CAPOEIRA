@@ -1,5 +1,5 @@
 @import "colors.css";
-@import "header.css";
+@import "nav-header.css";
 @import "/css/components/footer.css";
 @import "/css/components/menu.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700&display=swap');
@@ -34,6 +34,17 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 2rem;
 }
 
+.section-info h2 {
+    color: white;
+}
+
+.section-info h4 {
+    color: white;
+    margin: 0 !important;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
 /***** *****/
 .box-diferenciais {
     box-shadow: 0px -34px 0px -14px var(--red-light),
@@ -43,6 +54,17 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem;
     position: relative;
     top: -2rem;
+}
+
+.title-diferenciais p {
+    margin: 0 !important;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.title-diferenciais h1 {
+    margin-top: 0 !important;
 }
 
 .card-number {
@@ -55,8 +77,15 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-.card-number h3 {
+.card-number h1 {
     color: white !important;
+}
+
+.title-depoimentos {
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
 }
 
 .card-depoimentos {
@@ -104,4 +133,20 @@ h1, h2, h3, h4, h5, h6 {
     width: 170px;
     height: 170px;
     border-radius: 100%;
+}
+
+button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+  }
+
+.close:hover,
+.close:focus {
+  box-shadow: 
+    inset -3.5em 0 0 0 var(--hover),
+    inset 3.5em 0 0 0 var(--hover);  
 }
