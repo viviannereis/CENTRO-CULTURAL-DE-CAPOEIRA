@@ -29,3 +29,34 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+.detail-box {
+    background: var(--red-light);
+    position: relative;
+    padding: 9px;
+    border-radius: 10px 10px 0 0;
+    margin: 0 4rem;
+}
+
+.box-header {
+    background: var(--red);
+    padding: 2rem;
+    border-radius: 1rem;
+    align-items: center;
+    margin: 0 2rem;
+    box-shadow: 3px 6px 15px 4px rgba(0,0,0,0.1);
+}
+
+.box-header h4 {
+    color: white !important;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0 !important;
+}
+
+.box-header i {
+    font-size: 2.1rem;
+    position: relative;
+    top: 8px;
+}
