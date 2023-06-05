@@ -209,6 +209,11 @@ button {
     color: var(--red) !important;
 }
 
+.text-blog a {
+    color: var(--red) !important;
+    font-family: 'Prosto One', cursive !important;
+}
+
 /*** Button ***/
 .button{
     position: relative;
@@ -260,4 +265,21 @@ button {
   
 .button:active {
     top: 1px;
+}
+
+#numeros h2 {
+    text-transform: uppercase;
+    color: var(--red);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#nossoTime .uk-h5, h5,
+#nossoTime .uk-h4, h4 {
+    margin: 0 !important;
+    color: var(--red) !important;
+}
+
+#multimidia img {
+    width: 320px;
 }

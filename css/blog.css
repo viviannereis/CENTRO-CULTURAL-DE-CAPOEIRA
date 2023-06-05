@@ -1,8 +1,17 @@
-@import "colors.css";
+@import "/css/colors.css";
 @import "/css/components/footer.css";
-@import "/css/nav-header.css";
+@import "/css/components/menu.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prosto+One&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Prosto One', cursive !important;
+}
 
 .post-image {
     height: 220px;
@@ -19,4 +28,109 @@
 
 .info-post {
     font-size: 12px !important;
+}
+
+.uk-card-body .uk-icon-button {
+    position: absolute;
+    top: 205px;
+}
+
+.title {
+    margin: 15px 0;
+}
+
+.title a {
+    color: var(--red) !important;
+    font-family: 'Prosto One', cursive !important;
+    font-size: 20px;
+}
+
+#blog .uk-card-body {
+    height: 250px;
+}
+
+.chinfrado {
+    width: 50%;
+    margin: 30px 0;
+    text-align: justify;
+    font-style: italic;
+}
+
+/*** Button ***/
+.button{
+    position: relative;
+    background-color: var(--red);
+    border-radius: 4em;
+    font-size: 14px;
+    color: white !important;
+    padding: 0.7em 2.8em;
+    cursor:pointer;
+    user-select:none;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    font-family: 'Prosto One', cursive !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+  
+.button:hover {
+    transition-duration: 0.1s;
+    background-color: var(--red-dark);
+}
+  
+.button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+}
+  
+.button:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+}
+  
+.button:active {
+    top: 1px;
+}
+
+.align-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.assinatura {
+    border-top: 3px solid #ccc;
+    border-bottom: 3px solid #ccc;
+    padding: 30px 0 !important;
+    margin: 50px 0 !important;
+}
+
+.assinatura img {
+    width: 150px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 80px 0 !important;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/sobre.css">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.16/dist/css/uikit.min.css" />
     <!-- UIkit JS -->
@@ -18,42 +18,39 @@
 
 <body>
     <!--////////// Nav ///////////-->
-    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-        <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
-            <div class="uk-navbar-left">
-                <a href="/index.html"><img class="uk-width-1-3@m" src="/img/logo/logo.png"></a>
-            </div>
-            <!--//-->
-            <div class="uk-navbar-center">
-                <ul class="uk-navbar-nav uk-navbar-right">
-                    <li>
-                        <a href="#">Sobre <span uk-navbar-parent-icon></span></a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a href="/pages/sobre/sobre-ventre-livre.html">Sobre o Ventre Livre</a></li>
-                                <li><a href="#">Sobre Nossos Eventos</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="/pages/nosso-time.html">Nosso Time</a></li>
-                    <li><a href="/pages/multimidia.html">Multimídia</a></li>
-                    <li><a href="/pages/blog/page-1.html">Blog</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </div>
-            <!--/ Search/-->
-            <div class="uk-navbar-right">
-                <div>
-                    <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
-                    <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
-                        <form class="uk-search uk-search-navbar uk-width-1-1">
-                            <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search" autofocus>
-                        </form>
+    <section id="menu">
+        <a href="/index.html" class="logo">
+            <img src="/img/logo/logo.png">
+        </a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a class="active">Sobre</a></li>
+                <div uk-dropdown="animation: reveal-top; animate-out: true; duration: 700">
+                    <div class="uk-dropdown-nav align-grid">
+                        <a href="/pages/sobre/sobre-ventre-livre.html">Sobre o Ventre Livre</a><br>
+                        <a href="/pages/sobre/eventos-nucleos.html">Eventos e Nossos Núcleos</a>
                     </div>
                 </div>
-            </div>
+                <li><a href="/pages/nosso-time.html">Nosso Time</a></li>
+                <li><a href="/pages/multimidia.html">Multimídia</a></li>
+                <li><a href="/pages/blog/page-1.html">Blog</a></li>
+                <li><a href="/pages/contato.html">Contato</a></li>
+            </ul>
         </nav>
-    </div>
+        <div class="clearfix"></div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+  <script>
+      $(document).ready(function(){
+          $('.menu-toggle').click(function(){
+              $('.menu-toggle').toggleClass('active')
+              $('nav').toggleClass('active')
+          })
+      })
+  </script>
 
     <!--////////// Header ///////////-->
     <header class="uk-container uk-margin-medium-top uk-margin-large-bottom">
@@ -63,7 +60,7 @@
         </div>
     </header>
 
-    <article class="uk-container">
+    <article id="sobreVentreLivre" class="uk-container">
         <section class="uk-child-width-1-2@m uk-flex-middle uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
             <div class="uk-card">
                 <img src="/img/sobre/img-1.png">
@@ -284,9 +281,9 @@
             </div>
         </section>
         <!--//-->
-        <section class="uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+        <section class="uk-margin-xlarge-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
             <div class="uk-card">
-                <h4>Hino do grupo ventre livre</h4>
+                <h4 class="uk-text-uppercase uk-text-center">Hino do grupo ventre livre</h4>
                 <p>
                     Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
                     Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando 
@@ -323,7 +320,7 @@
                     com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, 
                     com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
                 </p>
-                <h5>
+                <h5 class="text-red ">
                     Autora: <br/>
                     <span class="uk-text-uppercase">Graduada caxo</span> - Elisângela Fonseca<br/>
                     Data de criação: 00/00/0000
@@ -331,9 +328,9 @@
             </div>
         </section>
         <!--//-->
-        <section class="uk-margin-medium-top" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+        <section class="uk-margin-large-top uk-margin-xlarge-bottom uk-text-center">
             <p>Para ouvir o nosso hino e outras músicas acesse a nossa página de multimídia</p>
-            <a href="">Multimídia ventre livre</a>
+            <a class="button" href="/pages/multimidia.html">Multimídia ventre livre</a>
         </section>
     </article>
     
@@ -373,15 +370,15 @@
        <!--//-->
        <section class="uk-flex-middle uk-flex-between@l uk-padding-small" uk-grid>
             <div >
-                <a class="uk-link-muted uk-margin-medium-right" href="#">Sobre o Ventre Livre</a>
-                <a class="uk-link-muted uk-margin-medium-right" href="#">Nosso Time</a>
-                <a class="uk-link-muted uk-margin-medium-right" href="#">Multimídia</a>
-                <a class="uk-link-muted uk-margin-medium-right" href="#">Blog</a>
-                <a class="uk-link-muted" href="#">Contato</a>
+                <a class="uk-link-muted uk-margin-medium-right" href="/pages/sobre/sobre-ventre-livre.html">Sobre o Ventre Livre</a>
+                <a class="uk-link-muted uk-margin-medium-right" href="/pages/nosso-time.html">Nosso Time</a>
+                <a class="uk-link-muted uk-margin-medium-right" href="/pages/multimidia.html">Multimídia</a>
+                <a class="uk-link-muted uk-margin-medium-right" href="/pages/blog/page-1.html">Blog</a>
+                <a class="uk-link-muted" href="/pages/contato.html">Contato</a>
             </div>
             <!--//-->
             <div >
-                <p >Copyright 2022 - Capoeira Ventre Livre</p>
+                <p >Copyright 2023 - Capoeira Ventre Livre</p>
             </div>
        </section>
      </footer>

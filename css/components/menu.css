@@ -1,18 +1,114 @@
-nav {
-    height: 70px;
+#menu {
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0px 12px 28px 0px rgba(140, 149, 159, 0.3);
 }
 
-nav li {
-    transition: all .3s ease;
+.logo img {
+    width: 150px;
+    position: absolute;
+    z-index: 1000;
 }
 
-nav li:hover {
-    transform:  scaleX(1);
+nav{
+    float: right;
+}
+
+.clearfix{
+    clear: both;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 25px;
+    text-decoration: none !important;
+    color: #777;
+    font-family: 'Prosto One', cursive !important;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    color: #555;
     border-bottom: 5px solid var(--red);
 }
 
-.uk-navbar-nav>li>a {
-    color: #999;
-    font-family: 'Prosto One', cursive !important;
-    letter-spacing: 1px;
+@media(max-width: 1200px){
+    header{
+        margin: 20px;
+    }
+}
+@media(max-width: 768px){
+    .menu-toggle{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: var(--red);
+    }
+    .menu-toggle:before{
+        content: '\f0c9';
+        font-style: fontAwesome;
+        line-height: 40px;
+    }
+    .menu-toggle.active:before{
+        content: '\f00d';
+    }
+    nav{
+        display: none;
+    }
+    nav.active{
+        display: block;
+        width: 100%;
+    }
+    nav.active ul{
+        display: block;
+    }
+    nav.active ul li{
+        margin: 0;
+    }
+}
+
+.detail-box {
+    background: var(--red-light);
+    position: relative;
+    padding: 9px;
+    border-radius: 10px 10px 0 0;
+    margin: 0 4rem;
+}
+
+.box-header {
+    background: var(--red);
+    padding: 2rem;
+    border-radius: 1rem;
+    align-items: center;
+    margin: 0 2rem;
+    box-shadow: 3px 6px 15px 4px rgba(0,0,0,0.1);
+}
+
+.box-header h4 {
+    color: white !important;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0 !important;
+}
+
+.box-header i {
+    font-size: 2.1rem;
+    position: relative;
+    top: 8px;
 }

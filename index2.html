@@ -11,123 +11,284 @@
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.16/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.16/dist/js/uikit-icons.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="/js/global.js"></script>
     <title>Capoeira Ventre Livre</title>
 </head>
 
 <body>
     <!--////////// Nav ///////////-->
-    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-        <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
-            <div class="uk-navbar-left">
-
-            </div>
-            <!--//-->
-            <div class="uk-navbar-center">
-                <ul class="uk-navbar-nav uk-navbar-right">
-                    <li>
-                        <a href="#">Sobre <span uk-navbar-parent-icon></span></a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a href="#">Sobre o Ventre Livre</a></li>
-                                <li><a href="#">Sobre Nossos Eventos</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Nosso Time</a></li>
-                    <li><a href="#">Multimídia</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </div>
-            <!--/ Search/-->
-            <div class="uk-navbar-right">
-                <div>
-                    <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
-                    <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
-                        <form class="uk-search uk-search-navbar uk-width-1-1">
-                            <input class="uk-search-input" type="search" placeholder="Search" aria-label="Search" autofocus>
-                        </form>
+    <section id="menu">
+        <a href="/index.html" class="logo">
+            <img src="/img/logo/logo.png">
+        </a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a>Sobre</a></li>
+                <div uk-dropdown="animation: reveal-top; animate-out: true; duration: 700">
+                    <div class="uk-dropdown-nav align-grid">
+                        <a href="/pages/sobre/sobre-ventre-livre.html">Sobre o Ventre Livre</a><br>
+                        <a href="/pages/sobre/eventos-nucleos.html">Eventos e Nossos Núcleos</a>
                     </div>
                 </div>
-            </div>
+                <li><a href="/pages/nosso-time.html">Nosso Time</a></li>
+                <li><a href="/pages/multimidia.html">Multimídia</a></li>
+                <li><a href="/pages/blog/page-1.html">Blog</a></li>
+                <li><a href="/pages/contato.html">Contato</a></li>
+            </ul>
         </nav>
-    </div>
+        <div class="clearfix"></div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+  <script>
+      $(document).ready(function(){
+          $('.menu-toggle').click(function(){
+              $('.menu-toggle').toggleClass('active')
+              $('nav').toggleClass('active')
+          })
+      })
+  </script>
 
     <!--////////// Header ///////////-->
-    <header class="main-banner ">
-        <video autoplay muted loop id="bg-video">
+    <header class="main-banner" uk-height-viewport="min-height: 300">
+        <video  autoplay muted loop id="bg-video">
             <source src="video/header-rj.mp4" type="video/mp4" />
         </video>
         <div class="video-overlay header-text">
-            <div class="">
-                <div class="caption ">
-                    <img class="w-3/5" src="img/logo/logo-header.png" alt="Logo Header">
-                </div>
+            <div class="caption uk-flex uk-flex-center">
+                <img src="img/logo/logo-header.png" alt="Logo Header">
             </div>
         </div>
     </header>
 
 
+
     <!--///////// O amor pela capoeira é o que nos move //////////-->
-    <section >
-       
+    <section class="section-info">
+        <div class="uk-container">
+            <div class="uk-grid-match uk-child-width-1-2@m" uk-grid uk-scrollspy="cls: uk-animation-scale-up; target: .uk-card; delay: 300; repeat: true">
+                <div class="uk-card">
+                    <img src="/img/home/home-capoeira.png">
+                </div>
+                <!--//-->
+                <div class="uk-card">
+                    <h2>O amor pela capoeira é <br/> o que nos move</h2>
+                    <h4>Ventre Livre</h4>
+                    <p>
+                        O <span>Ventre livre</span> é um grupo de capoeira que busca expandir a 
+                        expriência da arte da capoeira através do contato humano conectando 
+                        pessoas através do armor a arte da capeira em todas as faixas etárias 
+                        sem qualquer restrição em prol da qualidade de vida física e mental. 
+                    </p>
+                    <p>
+                        A nossa missão é levar a cultura da Capoeira pelo mundo com o intuito 
+                        de divulgar e garantir que muitas pessoas possam conhecer e se 
+                        conectar ao nosso propósito.
+                    </p>
+                    <p>Sobre o ventre livre 
+                        <a href="/pages/sobre/sobre-ventre-livre.html" class="uk-icon-button" uk-icon="chevron-right" style="background: #ddd !important; color: var(--red) !important;"></a>
+                    </p>
+                </div>
+            </div>
+    
+        </div>
     </section>
 
     <!--///////// Nossos diferenciais //////////-->
-    <section >
-
+    <section id="nossosDiferenciais" class="uk-container" uk-scrollspy="cls: uk-animation-scale-up; target: .uk-card; delay: 300; repeat: true">
+        <div class="uk-card box-diferenciais uk-margin-large-bottom">
+            <div class="title-diferenciais uk-text-center">
+                <p>nossos</p>
+                <h1>diferenciais</h1>
+            </div>
+            <!--//-->
+            <div class="uk-child-width-1-4@m uk-text-center" uk-grid>
+                <div>
+                    <img src="/img/home/img-1.svg">
+                    <h6>Aulas para crianças, adultos e melhor idade</h6>
+                    <p>Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão</p>
+                </div>
+                <div>
+                    <img src="/img/home/img-2.svg">
+                    <h6>Aulas para crianças, adultos e melhor idade</h6>
+                    <p>Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão</p>
+                </div>
+                <div>
+                    <img src="/img/home/img-3.svg">
+                    <h6>Aulas para crianças, adultos e melhor idade</h6>
+                    <p>Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão</p>
+                </div>
+                <div>
+                    <img src="/img/home/img-4.svg">
+                    <h6>Aulas para crianças, adultos e melhor idade</h6>
+                    <p>Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão</p>
+                </div>
+            </div>
+            <!--//-->
+            <div class="sobre-contact">
+                <h4>contato sobre aulas, material e eventos</h4>
+                <a class="button" href="/pages/contato.html">Contato</a>
+            </div>
+        </div>
     </section>
 
     <!--///////// O ventre livre em números //////////-->
-    <section >
-      
+    <section id="numeros" class="uk-container uk-container-small uk-margin-large-bottom	">
+        <div class="uk-flex-middle" uk-grid>
+            <h2 class="uk-text-center">o ventre livre em números</h2>
+            <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-3@l uk-text-center" uk-grid="parallax: 150" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+                <div>
+                    <div class="uk-card card-number">
+                        <h1><span class="counter-value">10000</span></h1>
+                        <p>eventos</p>
+                    </div>
+                </div>
+                <!--//-->
+                <div>
+                    <div class="uk-card card-number" uk-scrollspy-class="uk-animation-slide-top">
+                        <h1><span class="counter-value">5000</span></h1>
+                        <p>entrega de cordéis</p>
+                    </div>
+                </div>
+                <!--//-->
+                <div>
+                    <div class="uk-card card-number" uk-scrollspy-class="uk-animation-slide-top">
+                        <h1><span class="counter-value">2500</span></h1>
+                        <p>alunos que passaram pelo grupo</p>
+                    </div>
+                </div>
+                <!--//-->
+                <div>
+                    <div class="uk-card card-number">
+                        <h1><span class="counter-value">23</span></h1>
+                        <p>alunos formados</p>
+                    </div>
+                </div>
+                <!--//-->
+                <div>
+                    <div class="uk-card card-number">
+                        <h1><span class="counter-value">50</span></h1>
+                        <p>locais de treinamento ao longo dos anos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!--///////// Depoimentos //////////-->
-    <section>
-        <h3>depoimentos</h3>
-        <div class="uk-slider-container-offset" uk-slider="autoplay: true; autoplay-interval: 8000; pause-on-hover: true;">
+    <section class="uk-container">
+        <h3 class="title-depoimentos">depoimentos</h3>
+        <div class="uk-slider-container-offset" uk-slider="autoplay: true; autoplay-interval: 4000; pause-on-hover: true;">
 
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+            <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1">
         
                 <ul class="uk-slider-items uk-child-width-1-1@s uk-grid">
+                    <!--/ Text 1/-->
                     <li>
-                        <div class="uk-card uk-card-default">
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Headline</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="uk-card card-depoimentos">
+                            <div class="photo-container">
+                                <img class="photo" src="/img/depoimentos/img-1.png">
+                            </div>
+                            <div>
+                                <p>
+                                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando 
+                                    um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer 
+                                    um livro de espécimes de tipos.
+                                </p>
+                                <div class="text-depoimento">
+                                    <h4 class="uk-text-bold">Mestre Batata</h4>
+                                    <p class="uk-text-uppercase">Grupo XXXX</p>
+                                    <p class="uk-text-uppercase">Rio de Janeiro</p>
+                                </div>
                             </div>
                         </div>
                     </li>
+                    <!--/ Text 2/-->
                     <li>
-                        <div class="uk-card uk-card-default">
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Headline</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="uk-card card-depoimentos">
+                            <div class="photo-container">
+                                <img class="photo" src="/img/nosso-time/mestre-1.png">
+                            </div>
+                            <div>
+                                <p>
+                                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando 
+                                    um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer 
+                                    um livro de espécimes de tipos.
+                                </p>
+                                <div class="text-depoimento">
+                                    <h4 class="uk-text-bold">Mestre Batata</h4>
+                                    <p class="uk-text-uppercase">Grupo XXXX</p>
+                                    <p class="uk-text-uppercase">Rio de Janeiro</p>
+                                </div>
                             </div>
                         </div>
                     </li>
+                    <!--/ Text 3/-->
                     <li>
-                        <div class="uk-card uk-card-default">
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Headline</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="uk-card card-depoimentos">
+                            <div class="photo-container">
+                                <img class="photo" src="/img/nosso-time/mestre-batata.png">
+                            </div>
+                            <div>
+                                <p>
+                                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando 
+                                    um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer 
+                                    um livro de espécimes de tipos.
+                                </p>
+                                <div class="text-depoimento">
+                                    <h4 class="uk-text-bold">Mestre Batata</h4>
+                                    <p class="uk-text-uppercase">Grupo XXXX</p>
+                                    <p class="uk-text-uppercase">Rio de Janeiro</p>
+                                </div>
                             </div>
                         </div>
                     </li>
+                    <!--/ Text 4/-->
                     <li>
-                        <div class="uk-card uk-card-default">
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Headline</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="uk-card card-depoimentos">
+                            <div class="photo-container">
+                                <img class="photo" src="/img/depoimentos/img-1.png">
+                            </div>
+                            <div>
+                                <p>
+                                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando 
+                                    um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer 
+                                    um livro de espécimes de tipos.
+                                </p>
+                                <div class="text-depoimento">
+                                    <h4 class="uk-text-bold">Mestre Batata</h4>
+                                    <p class="uk-text-uppercase">Grupo XXXX</p>
+                                    <p class="uk-text-uppercase">Rio de Janeiro</p>
+                                </div>
                             </div>
                         </div>
                     </li>
+                    <!--/ Text 5/-->
                     <li>
-                        <div class="uk-card uk-card-default">
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Headline</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="uk-card card-depoimentos">
+                            <div class="photo-container">
+                                <img class="photo" src="/img/depoimentos/img-1.png">
+                            </div>
+                            <div>
+                                <p>
+                                    Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. 
+                                    Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando 
+                                    um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer 
+                                    um livro de espécimes de tipos.
+                                </p>
+                                <div class="text-depoimento">
+                                    <h4 class="uk-text-bold">Mestre Batata</h4>
+                                    <p class="uk-text-uppercase">Grupo XXXX</p>
+                                    <p class="uk-text-uppercase">Rio de Janeiro</p>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -144,7 +305,7 @@
     </section>
 
      <!--///////// Posts do blog //////////-->
-     <div class="uk-slider-container-offset" uk-slider="autoplay: true; autoplay-interval: 2000">
+     <div id="postsBlog" class="uk-slider-container-offset uk-margin-large" uk-slider="autoplay: true; autoplay-interval: 2000">
 
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
     
@@ -152,55 +313,115 @@
                 <li>
                     <div class="uk-card uk-card-default">
                         <div class="uk-card-media-top">
-                            <img src="images/photo.jpg" width="100" height="100" alt="">
+                            <img src="/img/blog/post-1.png" width="100" height="100" alt="">
                         </div>
                         <div class="uk-card-body">
-                            <h3 class="uk-card-title">Headline</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <div class="uk-flex uk-flex-right@m">
+                                <a class="uk-icon-button" uk-icon="chevron-right"></a>
+                            </div>
+                            <div class="uk-flex-middle" uk-grid>
+                                <div class="uk-width-1-3@m uk-flex-first">
+                                    <p class="small">13 JAN 2023</p>
+                                    <p class="small">Autor: Mestre XPTO<br/>
+                                    Grupo Ventre Livre</p>
+                                </div>
+                                <div class="uk-width-2-3@m text-blog">
+                                    <a class="uk-card-title" href="/pages/posts/post-1.html">Cultura</a>
+                                    <p>Lorem Ipsum é simplesmente um texto fictício da indústria</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="uk-card uk-card-default">
                         <div class="uk-card-media-top">
-                            <img src="images/dark.jpg" width="1800" height="1200" alt="">
+                            <img src="/img/blog/post-2.png" width="1800" height="1200" alt="">
                         </div>
                         <div class="uk-card-body">
-                            <h3 class="uk-card-title">Headline</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <div class="uk-flex uk-flex-right@m">
+                                <a class="uk-icon-button" uk-icon="chevron-right"></a>
+                            </div>
+                            <div class="uk-flex-middle" uk-grid>
+                                <div class="uk-width-1-3@m uk-flex-first">
+                                    <p class="small">13 JAN 2023</p>
+                                    <p class="small">Autor: Mestre XPTO<br/>
+                                    Grupo Ventre Livre</p>
+                                </div>
+                                <div class="uk-width-2-3@m text-blog">
+                                    <a class="uk-card-title" href="/pages/posts/post-1.html">Capoeira</a>
+                                    <p>Lorem Ipsum é simplesmente um texto fictício da indústria</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="uk-card uk-card-default">
                         <div class="uk-card-media-top">
-                            <img src="images/light.jpg" width="1800" height="1200" alt="">
+                            <img src="/img/blog/post-3.png" width="1800" height="1200" alt="">
                         </div>
                         <div class="uk-card-body">
-                            <h3 class="uk-card-title">Headline</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <div class="uk-flex uk-flex-right@m">
+                                <a class="uk-icon-button" uk-icon="chevron-right"></a>
+                            </div>
+                            <div class="uk-flex-middle" uk-grid>
+                                <div class="uk-width-1-3@m uk-flex-first">
+                                    <p class="small">13 JAN 2023</p>
+                                    <p class="small">Autor: Mestre XPTO<br/>
+                                    Grupo Ventre Livre</p>
+                                </div>
+                                <div class="uk-width-2-3@m text-blog">
+                                    <a class="uk-card-title" href="/pages/posts/post-1.html">Cultura</a>
+                                    <p>Lorem Ipsum é simplesmente um texto fictício da indústria</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="uk-card uk-card-default">
                         <div class="uk-card-media-top">
-                            <img src="images/photo2.jpg" width="1800" height="1200" alt="">
+                            <img src="/img/blog/post-1.png" width="1800" height="1200" alt="">
                         </div>
                         <div class="uk-card-body">
-                            <h3 class="uk-card-title">Headline</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <div class="uk-flex uk-flex-right@m">
+                                <a class="uk-icon-button" uk-icon="chevron-right"></a>
+                            </div>
+                            <div class="uk-flex-middle" uk-grid>
+                                <div class="uk-width-1-3@m uk-flex-first">
+                                    <p class="small">13 JAN 2023</p>
+                                    <p class="small">Autor: Mestre XPTO<br/>
+                                    Grupo Ventre Livre</p>
+                                </div>
+                                <div class="uk-width-2-3@m text-blog">
+                                    <a class="uk-card-title" href="/pages/posts/post-1.html">Cultura</a>
+                                    <p>Lorem Ipsum é simplesmente um texto fictício da indústria</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="uk-card uk-card-default">
                         <div class="uk-card-media-top">
-                            <img src="images/photo3.jpg" width="1800" height="1200" alt="">
+                            <img src="/img/blog/post-2.png" width="1800" height="1200" alt="">
                         </div>
                         <div class="uk-card-body">
-                            <h3 class="uk-card-title">Headline</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <div class="uk-flex uk-flex-right@m">
+                                <a class="uk-icon-button" uk-icon="chevron-right"></a>
+                            </div>
+                            <div class="uk-flex-middle" uk-grid>
+                                <div class="uk-width-1-3@m uk-flex-first">
+                                    <p class="small">13 JAN 2023</p>
+                                    <p class="small">Autor: Mestre XPTO<br/>
+                                    Grupo Ventre Livre</p>
+                                </div>
+                                <div class="uk-width-2-3@m text-blog">
+                                    <a class="uk-card-title" href="/pages/posts/post-1.html">Cultura</a>
+                                    <p>Lorem Ipsum é simplesmente um texto fictício da indústria</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -217,7 +438,50 @@
 
      <!--///////// Footer //////////-->
      <footer>
-       
+       <section class="footer-1">
+            <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-padding" uk-grid>
+                <div>
+                    <img class="uk-width-1-2" src="/img/logo/logo.png">
+                </div>
+                <div>
+                    <h6>Sede</h6>
+                    <p>
+                        Rua Exemplo, 00 - 000 <br/> 
+                        Centro - Rio de Janeiro/RJ - Brasil<br/>
+                        CEP: 20000-000
+                    </p>
+                    
+                </div>
+                <div>
+                    <h6>Entre em contato</h6>
+                    <p>(+55) 21 99999-9999<br/>
+                        contato@capoeiraventrelivre.com.br
+                    </p>
+                </div>
+                <div>
+                    <h6>Estamos oniline</h6>
+                    <a href="" class="uk-icon-button" uk-icon="icon: instagram"></a>
+                    <a href="" class="uk-icon-button" uk-icon="icon: linkedin"></a>
+                    <a href="" class="uk-icon-button" uk-icon="icon: facebook"></a>
+                    <a href="" class="uk-icon-button" uk-icon="icon: whatsapp"></a>
+                    <a href="" class="uk-icon-button" uk-icon="icon: youtube"></a>
+                </div>
+            </div>
+       </section>
+       <!--//-->
+       <section class="uk-flex-middle uk-flex-between@l uk-padding-small" uk-grid>
+            <div >
+                <a class="uk-link-muted uk-margin-medium-right" href="/pages/sobre/sobre-ventre-livre.html">Sobre o Ventre Livre</a>
+                <a class="uk-link-muted uk-margin-medium-right" href="/pages/nosso-time.html">Nosso Time</a>
+                <a class="uk-link-muted uk-margin-medium-right" href="/pages/multimidia.html">Multimídia</a>
+                <a class="uk-link-muted uk-margin-medium-right" href="/pages/blog/page-1.html">Blog</a>
+                <a class="uk-link-muted" href="/pages/contato.html">Contato</a>
+            </div>
+            <!--//-->
+            <div >
+                <p >Copyright 2023 - Capoeira Ventre Livre</p>
+            </div>
+       </section>
      </footer>
     
 </body>
